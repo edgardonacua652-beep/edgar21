@@ -1,35 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Edgardo Nacua | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    * { box-sizing: border-box; font-family: "Inter", Arial, sans-serif; }
+    body { margin: 0; background: #f5f7fb; color: #1f2937; }
+
+    .container { max-width: 1200px; margin: 30px auto; padding: 20px; }
+
+    .card {
+      background: #ffffff;
+      border-radius: 14px;
+      padding: 24px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .avatar {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    }
+
+    .profile h1 { margin: 0; font-size: 26px; }
+    .profile p { margin: 4px 0 0; color: #6b7280; }
+
+    .actions button {
+      border: none;
+      padding: 10px 16px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: 600;
+      margin-left: 8px;
+    }
+
+    .primary { background: #111827; color: #fff; }
+    .secondary { background: #eef2ff; color: #4338ca; }
+
+    /* Layout */
+    .grid {
+      display: grid;
+      grid-template-columns: 2.2fr 1fr;
+      gap: 20px;
+    }
+
+    @media (max-width: 900px) {
+      .grid { grid-template-columns: 1fr; }
+      .header { flex-direction: column; align-items: flex-start; }
+    }
+
+    h2 {
+      font-size: 18px;
+      margin-top: 0;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .muted { color: #6b7280; }
+
+    /* About */
+    .about p { line-height: 1.6; }
+
+    /* Info */
+    .info p { margin: 8px 0; }
+
+    /* Tech stack */
+    .stack span {
+      display: inline-block;
+      background: #f1f5f9;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 13px;
+      margin: 6px 6px 0 0;
+    }
+
+    /* Timeline */
+    .timeline {
+      border-left: 2px solid #e5e7eb;
+      padding-left: 16px;
+    }
+
+    .timeline-item { margin-bottom: 16px; }
+    .timeline-item strong { display: block; }
+    .year { font-size: 12px; color: #6b7280; }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #9ca3af;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
 
-<section class="hero">
-  <div class="hero-text">
-    <p class="hello">Hello, I'm</p>
-    <h1>Edgardo Nacua</h1>
+<div class="container">
 
-    <p class="info">
-      BSIT 2 – Block B<br>
-      Age: 21<br><br>
-      An Information Technology student passionate about building
-      clean, accessible, and modern web applications.
-    </p>
-
-    <div class="buttons">
-      <a href="#" class="btn primary">View My Work</a>
-      <a href="#" class="btn outline">Contact Me</a>
+  <!-- Header -->
+  <div class="card header">
+    <div class="profile">
+      <div class="avatar"></div>
+      <div>
+        <h1>Edgardo Nacua</h1>
+        <p>BS Information Technology • 2nd Year • Age 21</p>
+      </div>
+    </div>
+    <div class="actions">
+      <button class="primary">Contact</button>
+      <button class="secondary">View Profile</button>
     </div>
   </div>
 
-  <div class="hero-image">
-    <img src="profile.jpg" alt="Profile Image">
+  <!-- Main Content -->
+  <div class="grid">
+
+    <!-- Left Column -->
+    <div class="card about">
+      <h2>📘 About</h2>
+      <p>
+        I am <strong>Edgardo Nacua</strong>, a 2nd year BSIT student who is passionate about
+        learning technology, programming fundamentals, and web development. I aim to
+        continuously improve my skills and build meaningful projects as I grow in the IT field.
+      </p>
+
+      <h2>💻 Tech Stack (Learning)</h2>
+      <div class="stack">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Basic Programming</span>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="card">
+      <h2>📌 Personal Info</h2>
+      <div class="info">
+        <p><strong>Name:</strong> Edgardo Nacua</p>
+        <p><strong>Course:</strong> BSIT</p>
+        <p><strong>Year:</strong> 2nd Year</p>
+        <p><strong>Age:</strong> 21</p>
+      </div>
+
+      <h2 style="margin-top:24px">🎓 Education</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <strong>BS Information Technology</strong>
+          <span class="muted">College Student</span>
+          <div class="year">2023 – Present</div>
+        </div>
+        <div class="timeline-item">
+          <strong>Hello World 👋</strong>
+          <span class="muted">Started learning code</span>
+          <div class="year">2022</div>
+        </div>
+      </div>
+    </div>
+
   </div>
-</section>
+
+  <footer>
+    © 2026 Edgardo Nacua • Student Portfolio
+  </footer>
+
+</div>
 
 </body>
 </html>
