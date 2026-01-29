@@ -1,58 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edgardo Nacua Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edgardo Nacua | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <div class="profile">
-            <img src="profile.jpg" alt="Edgardo Nacua">
-            <div class="info">
-                <h1>Edgardo Nacua</h1>
-                <p>BSIT 2 BLOCK-B | Age: 21</p>
-                <div class="buttons">
-                    <button>Schedule a Call</button>
-                    <button>Email Me</button>
-                </div>
-            </div>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-content">
+      <img src="profile.jpg" alt="Edgardo Nacua" class="profile-img" />
+
+      <div class="header-info">
+        <h1>Edgardo Nacua</h1>
+        <p class="subtitle">BS Information Technology | Age 21</p>
+        <p class="role">Aspiring Software Engineer & Web Developer</p>
+
+        <div class="actions">
+          <a href="#" class="btn primary">Schedule a Call</a>
+          <a href="mailto:yourname@email.com" class="btn secondary">Send Email</a>
         </div>
-    </header>
+      </div>
+    </div>
+  </header>
 
-    <main>
-        <section class="about">
-            <h2>About Me</h2>
-            <p>
-                I'm a passionate software developer currently pursuing BS Information Technology. I enjoy building modern web applications, exploring new technologies, and creating solutions that make a difference.
-            </p>
-        </section>
+  <!-- MAIN CONTENT -->
+  <main class="container">
 
-        <section class="tech-stack">
-            <h2>Tech Stack</h2>
-            <div class="stack">
-                <h3>Frontend</h3>
-                <p>HTML, CSS, JavaScript, React</p>
-                <h3>Backend</h3>
-                <p>Node.js, PHP, Python, MySQL</p>
-                <h3>Tools & Cloud</h3>
-                <p>Git, GitHub, Docker, AWS</p>
-            </div>
-        </section>
+    <!-- ABOUT -->
+    <section class="card">
+      <h2>About Me</h2>
+      <p>
+        I am a motivated BS Information Technology student with a strong interest
+        in software development and modern web technologies. I enjoy building
+        responsive, user-friendly applications and continuously improving my
+        technical skills through hands-on projects and self-learning.
+      </p>
+    </section>
 
-        <section class="experience">
-            <h2>Experience & Education</h2>
-            <ul>
-                <li>BS Information Technology - University XYZ, 2nd Year</li>
-                <li>Software Projects in Web Development</li>
-                <li>Learning AI & Cloud technologies</li>
-            </ul>
-        </section>
-    </main>
+    <!-- TECH STACK -->
+    <section class="card">
+      <h2>Tech Stack</h2>
 
-    <footer>
-        <p>&copy; 2026 Edgardo Nacua</p>
-    </footer>
+      <div class="stack-group">
+        <h3>Frontend</h3>
+        <div class="tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>React</span>
+        </div>
+      </div>
+
+      <div class="stack-group">
+        <h3>Backend</h3>
+        <div class="tags">
+          <span>Node.js</span>
+          <span>PHP</span>
+          <span>Python</span>
+          <span>MySQL</span>
+        </div>
+      </div>
+
+      <div class="stack-group">
+        <h3>Tools & Cloud</h3>
+        <div class="tags">
+          <span>Git</span>
+          <span>GitHub</span>
+          <span>Docker</span>
+          <span>AWS</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="card">
+      <h2>Experience & Education</h2>
+      <ul class="timeline">
+        <li>
+          <strong>BS Information Technology</strong><br />
+          University XYZ — 2nd Year Student
+        </li>
+        <li>
+          <strong>Academic & Personal Projects</strong><br />
+          Web-based systems and portfolio projects
+        </li>
+        <li>
+          <strong>Continuous Learning</strong><br />
+          AI fundamentals, cloud computing, and backend development
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 Edgardo Nacua. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
+
