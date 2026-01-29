@@ -2,105 +2,72 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
-  background-color: #f4f6fb;
-  color: #333;
+  background: #0a0f1f;
+  color: #ffffff;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8%;
+  background: linear-gradient(135deg, #0a0f1f, #0e1b3d);
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hello {
+  color: #4da3ff;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 3.2rem;
+  background: linear-gradient(to right, #4da3ff, #7f8cff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.info {
+  margin: 20px 0 30px;
+  color: #cbd5f5;
   line-height: 1.6;
 }
 
-.container {
-  max-width: 1000px;
-  margin: auto;
-  padding: 30px 20px;
-}
-
-/* HEADER */
-.header {
-  background: #ffffff;
-  border-bottom: 1px solid #e5e7eb;
-}
-
-.header-content {
+.buttons {
   display: flex;
-  align-items: center;
-  gap: 30px;
+  gap: 15px;
 }
 
-.profile-img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.header-info h1 {
-  font-size: 28px;
-}
-
-.subtitle {
-  color: #555;
-  margin-top: 4px;
-}
-
-.role {
-  color: #2563eb;
-  font-weight: 500;
-  margin: 8px 0 16px;
-}
-
-.actions .btn {
-  text-decoration: none;
-  padding: 10px 18px;
+.btn {
+  padding: 12px 26px;
   border-radius: 8px;
-  font-size: 14px;
-  margin-right: 10px;
+  text-decoration: none;
+  font-weight: 500;
 }
 
-.btn.primary {
-  background: #2563eb;
-  color: #fff;
+.primary {
+  background: #4da3ff;
+  color: #000;
 }
 
-.btn.secondary {
-  border: 1px solid #2563eb;
-  color: #2563eb;
+.outline {
+  border: 2px solid #4da3ff;
+  color: #4da3ff;
 }
 
-/* CARDS */
-.card {
-  background: #ffffff;
-  padding: 25px;
-  border-radius: 12px;
-  margin-bottom: 25px;
-}
-
-/* TECH STACK */
-.stack-group {
-  margin-top: 15px;
-}
-
-.tags span {
-  display: inline-block;
-  background: #eef2ff;
-  color: #1e40af;
-  padding: 6px 12px;
-  margin: 6px 6px 0 0;
-  border-radius: 20px;
-  font-size: 13px;
-}
-
-/* TIMELINE */
-.timeline li {
-  margin-bottom: 12px;
-}
-
-/* FOOTER */
-.footer {
-  text-align: center;
-  padding: 20px;
-  color: #666;
-  font-size: 14px;
+.hero-image img {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
 }
